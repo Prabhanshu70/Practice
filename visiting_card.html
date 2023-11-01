@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visiting Card</title>
+    <style>
+        body{
+            background-color: bisque;
+        
+        }
+        div{
+            display: inline-block;
+        }
+        .container
+        {
+            
+            border: 3px solid black;
+            background-color: azure;
+            background-image: url('data:image/jpeg;base64,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');
+            
+            width: 320px;
+
+            height: 450px;
+            margin:  40px 500px;
+            padding: 3px;
+            box-shadow: 10px 10px 10px  rgb(170, 149, 149);
+            
+        }
+        .container:hover
+        {
+            background-color: aquamarine;
+            border-right: 3px solid tomato;
+            border-bottom: 3px solid tomato;
+            border-top: 3px solid lightsalmon;
+            border-left: 3px solid saddlebrown;
+            border-radius: 5px;
+            
+           
+
+        }
+        .vis
+        { /*display: inline-block;*/
+            position: absolute;
+            width: 270px;
+            height: 240px;
+             border-top: 2px solid black;
+           border-left: 2px solid black; 
+           border-top-left-radius: 5px;
+            margin: 5px 9px;
+            padding: 5px;
+            box-shadow: 5px 5px 3px gray;
+            box-sizing: border-box;
+
+        }
+        .ctt
+        {   position: absolute;
+            display: inline-block;
+            background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20221222/pngtree-cyan-blue-background-mobile-4k-wallpaper-hd-victor-image_1526120.jpg');
+            width: 290px;
+            height: 430px;
+            border: 2px solid black;
+            
+            margin: 3px 9px ;
+            
+            padding: 2px;
+            overflow: scroll;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .ctt:hover 
+        {
+            border-top: 3px solid bisque;
+            border-left: 3px solid bisque;
+            border-bottom: 3px solid aquamarine
+            border-bottom: 3px solid aqua;
+            border-radius: 5px;
+        }
+      .para{
+        display: inline-block;
+        text-shadow: 5px 5px 3px #e0e8ff;
+        text-align: center;
+        margin-top: 280px;
+      }
+        img{
+            margin-bottom: 5px;
+        }
+        a{
+            text-decoration: none;
+        }
+        b{
+            color :black
+        }
+        button
+        {
+            transform: rotateX('180');
+        }
+        .but{
+            width : 200px;
+            height: 100px;
+            background: yellowgreen;
+            transition: width 2s;
+        }
+        .but p:hover{
+            width:600px;
+        }
+    </style>
+</head>
+<body>
+    <!--button>Visiting Card</button>
+    <div class="but">
+    
+
+ <P>This is a Simple Visiting Card which is Created by using CSS and HTMl</P>
+</div-->
+    <div class="container">
+        <span class="ctt">
+         <div class="vis" id="card">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/281938474.jpg?k=6dc84fd94dc4a9159de8ac3ae42d1b5cda8db31ac24c9b31ea0decffb2e02d82&o=&hp=1" alt="error" width="255" height="230">
+         </div>
+        <div class="para">
+            <h3><a href="places.html">Visit our place</a></h3>
+            <p>
+            Hello ! this is <b>Prabhanshu Kumar</b> , your Guide Partner </p>
+            <P>connect with us on various sites</P>
+            <p>We Are the best Tourist Service Provider All around the World , Across the world over 2.5 million Our happy customer , over best Site to visit <strong>India Canada Russia NewYorkCity Mumbai berlin and so on..</strong><i>ViSit US ONCE</i></p>
+        </div>
+            
+        <span>
+    </div>
+    
+</body>
+</html>
